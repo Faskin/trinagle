@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.SqlServer.Server;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,13 +14,23 @@ namespace trinagle
 {
     public partial class Form2 : Form
     {
+        Graphics gp;
+        Pen p = new Pen(Brushes.Black, 2);
+        Trinagle tri = new Trinagle();
+        Trinagle triabc = new Trinagle();
+        Trinagle trideh = new Trinagle();
         public Form2()
         {
             Height = 790;
-            Width = 932;
-            Text = "Calculator";
+            Width = 1000;
 
-            
+
+            Label lblA = new Label();
+            {
+                lblA.Text = "Сторона A";
+                Controls.Add(lblA);
+            }
+
             Label lblB = new Label();
             {
                 lblB.Text = "Сторона B";
@@ -38,10 +50,19 @@ namespace trinagle
                 btnStart.Width = 248;
                 btnStart.Height = 65;
                 Controls.Add(btnStart);
+                
             }
-            Button btnForm2 = new Button();
+            Button btndraw = new Button();
             {
 
+                btndraw.Text = "Нарисовать треугольник";
+                btndraw.BackColor = Color.AliceBlue;
+                btndraw.Location = new Point(659, 170);
+                btndraw.Width = 248;
+                btndraw.Height = 65;
+                Controls.Add(btndraw);
+                btndraw.Click += Btndraw_Click;
+                
             }
             TextBox txtA = new TextBox();
             {
@@ -68,6 +89,8 @@ namespace trinagle
             }
 
 
+
+
             void clearText()
             {
                 txtA.Text = "";
@@ -89,13 +112,18 @@ namespace trinagle
                 txtC.Visible = true;
                 clearText();
             };
-            btnForm2.Click += (s, e) =>
+            /*btnForm2.Click += (s, e) =>
             {
                 Form2 form2 = new Form2();
                 form2.Owner = this;
                 form2.ShowDialog();
-            };
-            /*btnStart.Click += (s, e) =>
+            };*/
+
+            InitializeComponent();
+            gp = panel1.CreateGraphics();
+
+
+           /* btnStart.Click += (s, e) =>
            {
                 if (radio3.Checked)
                 {
@@ -103,7 +131,7 @@ namespace trinagle
                     && Regex.IsMatch(txtA.Text, @"^\d+$") && Regex.IsMatch(txtB.Text, @"^\d+$")
                     && Regex.IsMatch(txtC.Text, @"^\d+$"))
                     {
-                        Triangle triangle = new Triangle(Convert.ToDouble(txtA.Text), Convert.ToDouble(txtB.Text), Convert.ToDouble(txtC.Text));
+                        Trinagle triangle = new Trinagle(Convert.ToDouble(txtA.Text), Convert.ToDouble(txtB.Text), Convert.ToDouble(txtC.Text));
                         listTriangle.Items.Clear();
                         listTriangle.Items.Add("Сторона a");
                         listTriangle.Items.Add("Сторона b");
@@ -165,8 +193,21 @@ namespace trinagle
                     }
                 }
 
-            };
-            */
+            };*/
+            
+        }
+
+        private void Btndraw_Click(object sender, EventArgs e)
+        {
+            Point p1 = new Point(5, 5);
+            Point p2 = new Point(150, 5);
+            Point p3 = new Point(75, 30);
+
+            gp.DrawLine(p, p1, p2);
+            gp.DrawLine(p, p2, p3);
+            gp.DrawLine(p, p3, p1);
+            Point[] list = new Point[3] { p1, p2, p3 };
+            gp.DrawPolygon(p, list);
         }
     }
 }

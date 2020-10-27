@@ -24,7 +24,7 @@ namespace trinagle
             a = A;
             h = H;
         }
-        public string OutputA()
+        public string outputA()
         {
             return Convert.ToString(a);
         }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace trinagle
 {
@@ -108,6 +110,24 @@ namespace trinagle
             return type;
 
 
+
+        }
+
+       
+        public void DrawTriangle(Graphics field)
+        {
+            Pen p = new Pen(Brushes.Black, 2);
+            var sinA = 2 * Surface() / (a * b);
+            var alpha = Math.Asin(sinA);
+
+            int x = Convert.ToInt32(b * Math.Cos(alpha));
+            int y = Convert.ToInt32(b * Math.Sin(alpha));
+            Point p1 = new Point(10, 90);
+            Point p2 = new Point(10 + x, 90 - y);
+            Point p3 = new Point(10 + Convert.ToInt32(a), 90);
+
+            Point[] points = new Point[] { p1, p2, p3 };
+            field.DrawPolygon(p, points);
         }
         public double Side1Surface()
         {

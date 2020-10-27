@@ -39,7 +39,7 @@ namespace trinagle
 
             };
 
-            PictureBox img1 = new PictureBox();
+           /* PictureBox img1 = new PictureBox();
             {
                 img1.Location = new Point(600, 1);
                 img1.Image = new Bitmap("triangle.png");
@@ -47,7 +47,7 @@ namespace trinagle
                 img1.SizeMode = PictureBoxSizeMode.Zoom;
                 Controls.Add(img1);
             }
-
+           */
         }
 
         private void Btn1_Click(object sender, EventArgs e)

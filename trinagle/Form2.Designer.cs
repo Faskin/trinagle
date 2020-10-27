@@ -19,13 +19,6 @@
             }
             base.Dispose(disposing);
         }
-
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             this.numericA = new System.Windows.Forms.NumericUpDown();
@@ -34,16 +27,10 @@
             this.lblA = new System.Windows.Forms.Label();
             this.numericB = new System.Windows.Forms.NumericUpDown();
             this.numericC = new System.Windows.Forms.NumericUpDown();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel3Side = new System.Windows.Forms.Panel();
             this.btn3Side = new System.Windows.Forms.Button();
             this.btn1Side = new System.Windows.Forms.Button();
-            this.btnCalculate = new System.Windows.Forms.Button();
-            this.panel1Side = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.numericAHeight = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
-            this.numericHeight = new System.Windows.Forms.NumericUpDown();
+            this.btnStart = new System.Windows.Forms.Button();
             this.lblValA = new System.Windows.Forms.Label();
             this.lblValB = new System.Windows.Forms.Label();
             this.lblValC = new System.Windows.Forms.Label();
@@ -75,15 +62,20 @@
             this.lblImage = new System.Windows.Forms.Label();
             this.panelPicture = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.numericHeight = new System.Windows.Forms.NumericUpDown();
+            this.label3 = new System.Windows.Forms.Label();
+            this.numericAHeight = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel1Side = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericC)).BeginInit();
             this.panel3Side.SuspendLayout();
-            this.panel1Side.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericAHeight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericHeight)).BeginInit();
             this.panelValues.SuspendLayout();
             this.panelPicture.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericAHeight)).BeginInit();
+            this.panel1Side.SuspendLayout();
             this.SuspendLayout();
             // 
             // numericA
@@ -113,30 +105,30 @@
             // lblC
             // 
             this.lblC.AutoSize = true;
-            this.lblC.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblC.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblC.Location = new System.Drawing.Point(35, 129);
             this.lblC.Name = "lblC";
-            this.lblC.Size = new System.Drawing.Size(137, 35);
+            this.lblC.Size = new System.Drawing.Size(141, 29);
             this.lblC.TabIndex = 16;
             this.lblC.Text = "Сторона C:";
             // 
             // lblB
             // 
             this.lblB.AutoSize = true;
-            this.lblB.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblB.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblB.Location = new System.Drawing.Point(35, 79);
             this.lblB.Name = "lblB";
-            this.lblB.Size = new System.Drawing.Size(138, 35);
+            this.lblB.Size = new System.Drawing.Size(140, 29);
             this.lblB.TabIndex = 15;
             this.lblB.Text = "Сторона B:";
             // 
             // lblA
             // 
             this.lblA.AutoSize = true;
-            this.lblA.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblA.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblA.Location = new System.Drawing.Point(35, 30);
             this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(139, 35);
+            this.lblA.Size = new System.Drawing.Size(139, 29);
             this.lblA.TabIndex = 14;
             this.lblA.Text = "Сторона A:";
             // 
@@ -188,16 +180,6 @@
             0,
             0});
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 18.75F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(190, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(380, 44);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Калькулятор трегольника";
-            // 
             // panel3Side
             // 
             this.panel3Side.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -208,7 +190,7 @@
             this.panel3Side.Controls.Add(this.numericB);
             this.panel3Side.Controls.Add(this.lblC);
             this.panel3Side.Enabled = false;
-            this.panel3Side.Location = new System.Drawing.Point(9, 153);
+            this.panel3Side.Location = new System.Drawing.Point(399, 169);
             this.panel3Side.Name = "panel3Side";
             this.panel3Side.Size = new System.Drawing.Size(361, 192);
             this.panel3Side.TabIndex = 20;
@@ -220,7 +202,7 @@
             this.btn3Side.FlatAppearance.BorderColor = System.Drawing.Color.Linen;
             this.btn3Side.FlatAppearance.BorderSize = 3;
             this.btn3Side.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn3Side.Font = new System.Drawing.Font("Segoe Print", 20.75F);
+            this.btn3Side.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btn3Side.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn3Side.Location = new System.Drawing.Point(9, 81);
             this.btn3Side.Margin = new System.Windows.Forms.Padding(0);
@@ -238,7 +220,7 @@
             this.btn1Side.FlatAppearance.BorderColor = System.Drawing.Color.Linen;
             this.btn1Side.FlatAppearance.BorderSize = 3;
             this.btn1Side.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn1Side.Font = new System.Drawing.Font("Segoe Print", 20.75F);
+            this.btn1Side.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btn1Side.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn1Side.Location = new System.Drawing.Point(396, 81);
             this.btn1Side.Margin = new System.Windows.Forms.Padding(0);
@@ -249,133 +231,52 @@
             this.btn1Side.UseVisualStyleBackColor = false;
             this.btn1Side.UseWaitCursor = true;
             // 
-            // btnCalculate
+            // btnStart
             // 
-            this.btnCalculate.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.btnCalculate.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.btnCalculate.Enabled = false;
-            this.btnCalculate.FlatAppearance.BorderColor = System.Drawing.Color.Linen;
-            this.btnCalculate.FlatAppearance.BorderSize = 3;
-            this.btnCalculate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCalculate.Font = new System.Drawing.Font("Segoe Print", 20.75F);
-            this.btnCalculate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCalculate.Location = new System.Drawing.Point(198, 364);
-            this.btnCalculate.Margin = new System.Windows.Forms.Padding(0);
-            this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(361, 57);
-            this.btnCalculate.TabIndex = 23;
-            this.btnCalculate.Text = "Вычислить значения";
-            this.btnCalculate.UseVisualStyleBackColor = false;
-            this.btnCalculate.UseWaitCursor = true;
-            // 
-            // panel1Side
-            // 
-            this.panel1Side.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel1Side.Controls.Add(this.label2);
-            this.panel1Side.Controls.Add(this.numericAHeight);
-            this.panel1Side.Controls.Add(this.label3);
-            this.panel1Side.Controls.Add(this.numericHeight);
-            this.panel1Side.Enabled = false;
-            this.panel1Side.Location = new System.Drawing.Point(396, 153);
-            this.panel1Side.Name = "panel1Side";
-            this.panel1Side.Size = new System.Drawing.Size(361, 192);
-            this.panel1Side.TabIndex = 24;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 14.75F);
-            this.label2.Location = new System.Drawing.Point(47, 56);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(139, 35);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Сторона A:";
-            // 
-            // numericAHeight
-            // 
-            this.numericAHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.numericAHeight.Font = new System.Drawing.Font("Segoe Print", 12.75F);
-            this.numericAHeight.Location = new System.Drawing.Point(199, 53);
-            this.numericAHeight.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericAHeight.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericAHeight.Name = "numericAHeight";
-            this.numericAHeight.Size = new System.Drawing.Size(124, 38);
-            this.numericAHeight.TabIndex = 13;
-            this.numericAHeight.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe Print", 14.75F);
-            this.label3.Location = new System.Drawing.Point(47, 105);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 35);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Высота";
-            // 
-            // numericHeight
-            // 
-            this.numericHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.numericHeight.Font = new System.Drawing.Font("Segoe Print", 12.75F);
-            this.numericHeight.Location = new System.Drawing.Point(198, 102);
-            this.numericHeight.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numericHeight.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericHeight.Name = "numericHeight";
-            this.numericHeight.Size = new System.Drawing.Size(124, 38);
-            this.numericHeight.TabIndex = 17;
-            this.numericHeight.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.btnStart.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnStart.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.btnStart.Enabled = false;
+            this.btnStart.FlatAppearance.BorderColor = System.Drawing.Color.Linen;
+            this.btnStart.FlatAppearance.BorderSize = 3;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnStart.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnStart.Location = new System.Drawing.Point(199, 364);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(0);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(361, 57);
+            this.btnStart.TabIndex = 23;
+            this.btnStart.Text = "Вычислить значения";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.UseWaitCursor = true;
             // 
             // lblValA
             // 
             this.lblValA.AutoSize = true;
-            this.lblValA.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValA.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValA.Location = new System.Drawing.Point(5, 55);
             this.lblValA.Name = "lblValA";
-            this.lblValA.Size = new System.Drawing.Size(139, 35);
+            this.lblValA.Size = new System.Drawing.Size(139, 29);
             this.lblValA.TabIndex = 25;
             this.lblValA.Text = "Сторона A:";
             // 
             // lblValB
             // 
             this.lblValB.AutoSize = true;
-            this.lblValB.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValB.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValB.Location = new System.Drawing.Point(241, 55);
             this.lblValB.Name = "lblValB";
-            this.lblValB.Size = new System.Drawing.Size(138, 35);
+            this.lblValB.Size = new System.Drawing.Size(140, 29);
             this.lblValB.TabIndex = 26;
             this.lblValB.Text = "Сторона B:";
             // 
             // lblValC
             // 
             this.lblValC.AutoSize = true;
-            this.lblValC.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValC.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValC.Location = new System.Drawing.Point(511, 55);
             this.lblValC.Name = "lblValC";
-            this.lblValC.Size = new System.Drawing.Size(137, 35);
+            this.lblValC.Size = new System.Drawing.Size(141, 29);
             this.lblValC.TabIndex = 27;
             this.lblValC.Text = "Сторона C:";
             // 
@@ -409,6 +310,7 @@
             this.panelValues.Controls.Add(this.lblValA);
             this.panelValues.Controls.Add(this.lblValC);
             this.panelValues.Controls.Add(this.lblValB);
+            this.panelValues.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.panelValues.Location = new System.Drawing.Point(12, 434);
             this.panelValues.Name = "panelValues";
             this.panelValues.Size = new System.Drawing.Size(758, 330);
@@ -417,10 +319,10 @@
             // lblValues
             // 
             this.lblValues.AutoSize = true;
-            this.lblValues.Font = new System.Drawing.Font("Segoe Print", 18.75F, System.Drawing.FontStyle.Bold);
+            this.lblValues.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValues.Location = new System.Drawing.Point(320, 0);
             this.lblValues.Name = "lblValues";
-            this.lblValues.Size = new System.Drawing.Size(135, 44);
+            this.lblValues.Size = new System.Drawing.Size(128, 29);
             this.lblValues.TabIndex = 31;
             this.lblValues.Text = "Значения";
             // 
@@ -457,10 +359,10 @@
             // lblValMedian
             // 
             this.lblValMedian.AutoSize = true;
-            this.lblValMedian.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValMedian.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValMedian.Location = new System.Drawing.Point(286, 213);
             this.lblValMedian.Name = "lblValMedian";
-            this.lblValMedian.Size = new System.Drawing.Size(110, 35);
+            this.lblValMedian.Size = new System.Drawing.Size(123, 29);
             this.lblValMedian.TabIndex = 45;
             this.lblValMedian.Text = "Медиана:";
             // 
@@ -497,10 +399,10 @@
             // lblValHeight
             // 
             this.lblValHeight.AutoSize = true;
-            this.lblValHeight.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValHeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValHeight.Location = new System.Drawing.Point(5, 168);
             this.lblValHeight.Name = "lblValHeight";
-            this.lblValHeight.Size = new System.Drawing.Size(105, 35);
+            this.lblValHeight.Size = new System.Drawing.Size(103, 29);
             this.lblValHeight.TabIndex = 43;
             this.lblValHeight.Text = "Высота:";
             // 
@@ -537,30 +439,30 @@
             // lblValHeightA
             // 
             this.lblValHeightA.AutoSize = true;
-            this.lblValHeightA.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValHeightA.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValHeightA.Location = new System.Drawing.Point(241, 168);
             this.lblValHeightA.Name = "lblValHeightA";
-            this.lblValHeightA.Size = new System.Drawing.Size(129, 35);
+            this.lblValHeightA.Size = new System.Drawing.Size(124, 29);
             this.lblValHeightA.TabIndex = 37;
             this.lblValHeightA.Text = "Высота A:";
             // 
             // lblValHeightC
             // 
             this.lblValHeightC.AutoSize = true;
-            this.lblValHeightC.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValHeightC.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValHeightC.Location = new System.Drawing.Point(5, 213);
             this.lblValHeightC.Name = "lblValHeightC";
-            this.lblValHeightC.Size = new System.Drawing.Size(127, 35);
+            this.lblValHeightC.Size = new System.Drawing.Size(126, 29);
             this.lblValHeightC.TabIndex = 39;
             this.lblValHeightC.Text = "Высота C:";
             // 
             // lblValHeightB
             // 
             this.lblValHeightB.AutoSize = true;
-            this.lblValHeightB.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValHeightB.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValHeightB.Location = new System.Drawing.Point(511, 168);
             this.lblValHeightB.Name = "lblValHeightB";
-            this.lblValHeightB.Size = new System.Drawing.Size(128, 35);
+            this.lblValHeightB.Size = new System.Drawing.Size(125, 29);
             this.lblValHeightB.TabIndex = 38;
             this.lblValHeightB.Text = "Высота B:";
             // 
@@ -597,30 +499,30 @@
             // lblValPerimeter
             // 
             this.lblValPerimeter.AutoSize = true;
-            this.lblValPerimeter.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValPerimeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValPerimeter.Location = new System.Drawing.Point(5, 112);
             this.lblValPerimeter.Name = "lblValPerimeter";
-            this.lblValPerimeter.Size = new System.Drawing.Size(132, 35);
+            this.lblValPerimeter.Size = new System.Drawing.Size(137, 29);
             this.lblValPerimeter.TabIndex = 31;
             this.lblValPerimeter.Text = "Периметр:";
             // 
             // lblValSurface
             // 
             this.lblValSurface.AutoSize = true;
-            this.lblValSurface.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValSurface.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValSurface.Location = new System.Drawing.Point(511, 112);
             this.lblValSurface.Name = "lblValSurface";
-            this.lblValSurface.Size = new System.Drawing.Size(112, 35);
+            this.lblValSurface.Size = new System.Drawing.Size(125, 29);
             this.lblValSurface.TabIndex = 33;
             this.lblValSurface.Text = "Площадь:";
             // 
             // lblValSemiPerimeter
             // 
             this.lblValSemiPerimeter.AutoSize = true;
-            this.lblValSemiPerimeter.Font = new System.Drawing.Font("Segoe Print", 14.75F);
+            this.lblValSemiPerimeter.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblValSemiPerimeter.Location = new System.Drawing.Point(241, 112);
             this.lblValSemiPerimeter.Name = "lblValSemiPerimeter";
-            this.lblValSemiPerimeter.Size = new System.Drawing.Size(188, 35);
+            this.lblValSemiPerimeter.Size = new System.Drawing.Size(198, 29);
             this.lblValSemiPerimeter.TabIndex = 32;
             this.lblValSemiPerimeter.Text = "Полу периметр:";
             // 
@@ -680,6 +582,87 @@
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 30;
             // 
+            // numericHeight
+            // 
+            this.numericHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.numericHeight.Font = new System.Drawing.Font("Segoe Print", 12.75F);
+            this.numericHeight.Location = new System.Drawing.Point(198, 102);
+            this.numericHeight.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericHeight.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericHeight.Name = "numericHeight";
+            this.numericHeight.Size = new System.Drawing.Size(124, 38);
+            this.numericHeight.TabIndex = 17;
+            this.numericHeight.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(47, 105);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(97, 29);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Высота";
+            // 
+            // numericAHeight
+            // 
+            this.numericAHeight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.numericAHeight.Font = new System.Drawing.Font("Segoe Print", 12.75F);
+            this.numericAHeight.Location = new System.Drawing.Point(199, 53);
+            this.numericAHeight.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numericAHeight.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericAHeight.Name = "numericAHeight";
+            this.numericAHeight.Size = new System.Drawing.Size(124, 38);
+            this.numericAHeight.TabIndex = 13;
+            this.numericAHeight.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(47, 56);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(139, 29);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Сторона A:";
+            // 
+            // panel1Side
+            // 
+            this.panel1Side.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1Side.Controls.Add(this.label2);
+            this.panel1Side.Controls.Add(this.numericAHeight);
+            this.panel1Side.Controls.Add(this.label3);
+            this.panel1Side.Controls.Add(this.numericHeight);
+            this.panel1Side.Enabled = false;
+            this.panel1Side.Location = new System.Drawing.Point(9, 169);
+            this.panel1Side.Name = "panel1Side";
+            this.panel1Side.Size = new System.Drawing.Size(361, 192);
+            this.panel1Side.TabIndex = 24;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -689,48 +672,40 @@
             this.Controls.Add(this.panelPicture);
             this.Controls.Add(this.panelValues);
             this.Controls.Add(this.panel1Side);
-            this.Controls.Add(this.btnCalculate);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.btn1Side);
             this.Controls.Add(this.btn3Side);
             this.Controls.Add(this.panel3Side);
-            this.Controls.Add(this.label1);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Калькулятор";
             ((System.ComponentModel.ISupportInitialize)(this.numericA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericC)).EndInit();
             this.panel3Side.ResumeLayout(false);
             this.panel3Side.PerformLayout();
-            this.panel1Side.ResumeLayout(false);
-            this.panel1Side.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericAHeight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericHeight)).EndInit();
             this.panelValues.ResumeLayout(false);
             this.panelValues.PerformLayout();
             this.panelPicture.ResumeLayout(false);
             this.panelPicture.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericAHeight)).EndInit();
+            this.panel1Side.ResumeLayout(false);
+            this.panel1Side.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
-        #endregion
+
         private System.Windows.Forms.NumericUpDown numericA;
         private System.Windows.Forms.Label lblC;
         private System.Windows.Forms.Label lblB;
         private System.Windows.Forms.Label lblA;
         private System.Windows.Forms.NumericUpDown numericB;
         private System.Windows.Forms.NumericUpDown numericC;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3Side;
         private System.Windows.Forms.Button btn3Side;
         private System.Windows.Forms.Button btn1Side;
-        private System.Windows.Forms.Button btnCalculate;
-        private System.Windows.Forms.Panel panel1Side;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown numericAHeight;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown numericHeight;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label lblValA;
         private System.Windows.Forms.Label lblValB;
         private System.Windows.Forms.Label lblValC;
@@ -762,6 +737,12 @@
         private System.Windows.Forms.Label lblValues;
         private System.Windows.Forms.Panel panelPicture;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.NumericUpDown numericHeight;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.NumericUpDown numericAHeight;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel1Side;
     }
 }
+
     
